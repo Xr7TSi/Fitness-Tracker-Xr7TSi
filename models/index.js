@@ -1,3 +1,4 @@
-const Workout = require('./Workout');
+const Cardio = require('./Cardio');
+const Resistance = require('./Resistance');
 
-module.exports = { Workout };
+module.exports = { Cardio, Resistance };
