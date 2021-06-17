@@ -5,13 +5,6 @@ const express = require("express");
 
 module.exports = router;
 
-router.post("/api/workouts", function (req, res) {
-  Workout.create({})
-    .then((data) => res.json(data))
-    .catch((err) => {
-      res.json(err);
-    });
-});
 
 router.get("/api/workouts", (req, res) => {
   Workout.find({ read: true }, (error, found) => {
@@ -21,6 +14,14 @@ router.get("/api/workouts", (req, res) => {
       res.json(found);
     }
   });
+});
+
+router.post("/api/workouts", function (req, res) {
+  Workout.create({})
+    .then((data) => res.json(data))
+    .catch((err) => {
+      res.json(err);
+    });
 });
 
 router.put("/api/workouts/:id",({body,params},res)=>{   
