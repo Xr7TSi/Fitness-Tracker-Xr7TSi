@@ -14,6 +14,11 @@ router.post("/api/workouts", function (req, res) {
 });
 
 router.get("/api/workouts", (req, res) => {
-  //Use our Workout model to find all workouts
-  //Then use res.json to send all the data from our database to the client
+  Workout.find({ read: true }, (error, found) => {
+    if (error) {
+      console.log(error);
+    } else {
+      res.json(found);
+    }
+  });
 });
