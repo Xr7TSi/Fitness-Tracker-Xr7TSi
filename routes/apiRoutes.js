@@ -12,4 +12,3 @@ app.post("/workouts", function (req, res) {
       res.json(err);
     });
 });
-
