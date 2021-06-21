@@ -33,6 +33,7 @@ router.put("/api/workouts/:id",({body,params},res)=>{
   .then(data => res.json(data))
   .catch(err => { 
       res.json(err)
+      console.log(err)
   })
 });
 
@@ -45,5 +46,7 @@ router.get("/api/workouts/range",function(req,res){
       res.json(err)
   })
 });
+
+
 
 
