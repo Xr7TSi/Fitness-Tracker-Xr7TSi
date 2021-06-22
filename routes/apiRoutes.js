@@ -37,8 +37,19 @@ router.put("/api/workouts/:id",({body,params},res)=>{
   })
 });
 
+// router.get("/api/workouts/range",function(req,res){  
+//   Workout.find()
+//   .then(data =>{  
+//       res.json(data)
+//   })
+//   .catch(err => { 
+//       res.json(err)
+//   })
+// });
+
 router.get("/api/workouts/range",function(req,res){  
-  Workout.find()
+  Workout.aggregate([{$group : {_id : "_id", num_tutorial : {$sum : "$duration"}}}])
+    
   .then(data =>{  
       res.json(data)
   })
