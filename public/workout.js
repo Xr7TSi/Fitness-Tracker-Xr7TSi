@@ -56,6 +56,7 @@ function renderWorkoutSummary(summary) {
     totalReps: "Total Reps Performed",
     totalDistance: "Total Distance Covered"
   };
+  
 
   Object.keys(summary).forEach(key => {
     const p = document.createElement("p");

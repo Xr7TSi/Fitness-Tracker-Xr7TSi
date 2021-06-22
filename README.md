@@ -1,11 +1,11 @@
 
   # ![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
 
-  # Workout Tracker
+  # Fitness Tracker
 
-[Go to Workout-Tracker](https://xr7tsi/)
+[Go to Fitness Tracker](https://workout-tracker-xr7tsi.herokuapp.com/?id=60d129fb3dd42000152d8d6d)
 
-[Workout Tracker Image demo](./)
+![Workout Tracker Image demo](./assets/Fitness-Tracker-631x350-img.png)
 
 
   ## Contents:
@@ -19,28 +19,7 @@
   &nbsp;
   
   ## Description: 
-
-  #### Description
-  &nbsp;
-
-  ## Installation: 
-
-  #### Install
-  &nbsp;
-
-  ## Usage: 
-
-  #### Use
-  &nbsp;
-
-  ## Contributing: 
-
-  #### Contribute as is needed.
-  &nbsp;
-
-  ## Tests: 
-
-  #### No testing needed.
+  Fitness tracker is an app that allows the user to store and view their stats for cardio and resistance workouts.
   &nbsp;
   
   ## Questions?
