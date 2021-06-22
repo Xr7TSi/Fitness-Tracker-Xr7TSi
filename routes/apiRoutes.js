@@ -47,6 +47,9 @@ router.get("/api/workouts/range",function(req,res){
   })
 });
 
+// 
+// db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$sum : "$likes"}}}])
+
 
 
 
