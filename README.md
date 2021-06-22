@@ -3,9 +3,9 @@
 
   # Fitness Tracker
 
-[Go to Fitness Tracker](https://workout-tracker-xr7tsi.herokuapp.com/?id=60d129fb3dd42000152d8d6d)
+[Go to Fitness Tracker](https://workout-tracker-xr7tsi.herokuapp.com/)
 
-![Workout Tracker Image demo](./assets/Fitness-Tracker-631x350-img.png)
+![Workout Tracker Image demo](./assets/Fitness-Tracker-677x350-img.png)
 
 
   ## Contents:
