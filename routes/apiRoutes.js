@@ -37,29 +37,26 @@ router.put("/api/workouts/:id",({body,params},res)=>{
   })
 });
 
-// router.get("/api/workouts/range",function(req,res){  
-//   Workout.find()
-//   .then(data =>{  
-//       res.json(data)
-//   })
-//   .catch(err => { 
-//       res.json(err)
-//   })
-// });
 
 router.get("/api/workouts/range",function(req,res){  
-  Workout.aggregate([{$group : {_id : "_id", num_tutorial : {$sum : "$duration"}}}])
+  Workout.find()
     
   .then(data =>{  
-      res.json(data)
+   console.log(data)
+    const updatedData = data.map(workout => {
+      const totalDuration = workout.exercises.reduce((acc,curr) => acc+ curr.duration, 0)
+      return {day:workout.day,_id:workout._id, exercises: workout.exercises, totalDuration} 
+
+    })
+    // console.log(JSON.stringify(updatedData, null, 2))
+      res.json(updatedData)
   })
   .catch(err => { 
       res.json(err)
   })
 });
 
-// 
-// db.mycol.aggregate([{$group : {_id : "$by_user", num_tutorial : {$sum : "$likes"}}}])
+
 
 
 
